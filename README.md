@@ -1,6 +1,6 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 - [travis-ansible-testing](#travis-ansible-testing)
   - [Updating .travis.yml](#updating-travisyml)
@@ -36,6 +36,9 @@ tar zxvf v1.0.tar.gz --strip 1
 rm v1.0.tar.gz
 ./setup.sh
 ```
+
+> NOTE: You must also setup Travis integration for the repo you would like to
+> integrate with.
 
 ## License
 
