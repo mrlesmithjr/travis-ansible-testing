@@ -1,12 +1,14 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [travis-ansible-testing](#travis-ansible-testing)
-  - [Updating .travis.yml](#updating-travisyml)
-  - [Using In Ansible Roles](#using-in-ansible-roles)
-  - [License](#license)
-  - [Author Information](#author-information)
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+-   [travis-ansible-testing](#travis-ansible-testing)
+    -   [Updating .travis.yml](#updating-travisyml)
+    -   [Using In Ansible Roles](#using-in-ansible-roles)
+    -   [License](#license)
+    -   [Author Information](#author-information)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -20,7 +22,7 @@ Travis CI tests using Docker containers.
 Run the following to update the Ansible role name in `.travis.yml`:
 
 ```bash
-./setup.sh
+./setup_travis_tests.sh
 ...
 Enter the Ansible role name: test-role
 ```
@@ -32,9 +34,8 @@ do the following in order to integrate these tests.
 
 ```bash
 wget https://github.com/mrlesmithjr/travis-ansible-testing/archive/v1.0.tar.gz
-tar zxvf v1.0.tar.gz --strip 1
-rm v1.0.tar.gz
-./setup.sh
+tar zxvf v1.0.tar.gz --strip 1 --exclude="README.md"
+./setup_travis_tests.sh
 ```
 
 > NOTE: You must also setup Travis integration for the repo you would like to
