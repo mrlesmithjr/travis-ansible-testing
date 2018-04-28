@@ -33,8 +33,8 @@ In regards to using these tests within a new or existing Ansible role you may
 do the following in order to integrate these tests.
 
 ```bash
-wget https://github.com/mrlesmithjr/travis-ansible-testing/archive/v1.0.tar.gz
-tar zxvf v1.0.tar.gz --strip 1 --exclude="README.md"
+wget https://github.com/mrlesmithjr/travis-ansible-testing/archive/v1.1.tar.gz
+tar zxvf v1.1.tar.gz --strip 1 --exclude="README.md"
 ./setup_travis_tests.sh
 ```
 
