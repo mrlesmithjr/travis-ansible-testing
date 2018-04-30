@@ -33,13 +33,26 @@ In regards to using these tests within a new or existing Ansible role you may
 do the following in order to integrate these tests.
 
 ```bash
-wget https://github.com/mrlesmithjr/travis-ansible-testing/archive/v1.3.tar.gz
-tar zxvf v1.3.tar.gz --strip 1 --exclude="README.md"
+wget https://github.com/mrlesmithjr/travis-ansible-testing/archive/v1.4.tar.gz
+tar zxvf v1.4.tar.gz --strip 1 --exclude="README.md"
 ./setup_travis_tests.sh
 ```
 
 > NOTE: You must also setup Travis integration for the repo you would like to
 > integrate with.
+
+## ansible-lint
+
+We have implemented [`ansible-lint`](https://github.com/willthames/ansible-lint)
+as part of these tests.
+
+> NOTE: ansible-lint checks playbooks for practices and behaviour that could potentially be improved
+
+If `ansible-lint` detects something the testing will fail. So you need to ensure
+that your code aligns to `ansible-lint` practices. There are a few ways that you
+can resolve these issues if the code being detected is determined to be accurate.
+Use the [following](https://github.com/willthames/ansible-lint#false-positives) as
+how to resolve these alerts.
 
 ## License
 
