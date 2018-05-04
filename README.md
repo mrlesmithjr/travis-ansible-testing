@@ -33,8 +33,8 @@ In regards to using these tests within a new or existing Ansible role you may
 do the following in order to integrate these tests.
 
 ```bash
-wget https://github.com/mrlesmithjr/travis-ansible-testing/archive/v1.4.3.tar.gz
-tar zxvf v1.4.3.tar.gz --strip 1 --exclude="README.md"
+wget https://github.com/mrlesmithjr/travis-ansible-testing/archive/v1.4.4.tar.gz
+tar zxvf v1.4.4.tar.gz --strip 1 --exclude="README.md"
 ./setup_travis_tests.sh
 ```
 
@@ -53,6 +53,15 @@ that your code aligns to `ansible-lint` practices. There are a few ways that you
 can resolve these issues if the code being detected is determined to be accurate.
 Use the [following](https://github.com/willthames/ansible-lint#false-positives) as
 how to resolve these alerts.
+
+## yamllint
+
+We have implemented [`yamllint`](https://github.com/adrienverge/yamllint) to
+ensure that all `YAML` files are valid.
+
+> NOTE: yamllint does not only check for syntax validity, but for weirdnesses
+> like key repetition and cosmetic problems such as lines length, trailing spaces,
+> indentation, etc.
 
 ## License
 
