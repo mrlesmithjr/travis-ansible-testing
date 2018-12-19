@@ -1,3 +1,18 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
+
+- [travis-ansible-testing](#travis-ansible-testing)
+  - [Updating .travis.yml](#updating-travisyml)
+  - [Using In Ansible Roles](#using-in-ansible-roles)
+  - [ansible-lint](#ansible-lint)
+  - [yamllint](#yamllint)
+  - [License](#license)
+  - [Author Information](#author-information)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # travis-ansible-testing
 
 This role is purely for integrating with Ansible roles in order to conduct
@@ -19,7 +34,7 @@ In regards to using these tests within a new or existing Ansible role you may
 do the following in order to integrate these tests.
 
 ```bash
-export TRAVIS_TEST_VER="v1.6.1"
+export TRAVIS_TEST_VER="v1.6.2"
 wget https://github.com/mrlesmithjr/travis-ansible-testing/archive/$TRAVIS_TEST_VER.tar.gz
 tar zxvf $TRAVIS_TEST_VER.tar.gz --strip 1 --exclude="README.md"
 ./setup_travis_tests.sh
@@ -60,4 +75,4 @@ Larry Smith Jr.
 
 - [EverythingShouldBeVirtual](http://everythingshouldbevirtual.com)
 - [@mrlesmithjr](https://www.twitter.com/mrlesmithjr)
-- <mailto:mrlesmithjr@gmail.com>
+- [mrlesmithjr@gmail.com](mailto:mrlesmithjr@gmail.com)
