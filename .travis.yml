@@ -14,6 +14,15 @@ env:
     version: 7
   - distribution: fedora
     init: /usr/lib/systemd/systemd
+    version: 29
+  - distribution: fedora
+    init: /usr/lib/systemd/systemd
+    version: 28
+  - distribution: fedora
+    init: /usr/lib/systemd/systemd
+    version: 27
+  - distribution: fedora
+    init: /usr/lib/systemd/systemd
     version: 26
   - distribution: fedora
     init: /usr/lib/systemd/systemd
